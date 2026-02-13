@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elegant Invite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="overline" id="event-type">WEDDING DAY</p>
+          <h1 id="title">Анна & Максим</h1>
+          <p class="hero-subtitle" id="subtitle">Приглашаем вас разделить с нами один из самых тёплых дней в жизни</p>
+          <p class="hero-date" id="event-date-text">12 сентября 2026, 15:00</p>
+          <p class="hero-location" id="location-text">Villa Riviera, Московская область</p>
+          <a id="rsvp-link" class="btn" href="#" target="_blank" rel="noopener noreferrer">Подтвердить участие</a>
+        </div>
+
+        <div class="hero-visual" aria-label="Примеры блоков для фото">
+          <div class="img-card blue">PHOTO 01</div>
+          <div class="img-card red">PHOTO 02</div>
+          <div class="img-card cream">PHOTO 03</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section paper">
+        <div class="container center">
+          <h2>До события осталось</h2>
+          <div class="timer" aria-live="polite">
+            <div><span id="days">0</span><small>дней</small></div>
+            <div><span id="hours">0</span><small>часов</small></div>
+            <div><span id="minutes">0</span><small>минут</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div>
+            <h2>Программа дня</h2>
+            <ul class="program" id="program-list"></ul>
+          </div>
+          <div class="note-card">
+            <h3>Dress code</h3>
+            <p id="dress-code-text"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section">
+        <div class="container">
+          <h2 class="center">Галерея-заглушка</h2>
+          <p class="center muted">Пока вместо реальных фото поставлены цветные прямоугольники, чтобы наглядно оценить композицию.</p>
+          <div class="gallery-grid">
+            <div class="gallery-item blue">BLUE</div>
+            <div class="gallery-item red">RED</div>
+            <div class="gallery-item cream">PHOTO</div>
+            <div class="gallery-item blue">PHOTO</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>С любовью, <span id="couple-sign">Анна и Максим</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
