@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Приглашение</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-layer"></div>
+      <div class="hero-content container">
+        <p class="hero-date" id="hero-date">12 сентября 2026</p>
+        <h1 id="hero-title">Анна & Максим</h1>
+        <p class="hero-subtitle" id="hero-subtitle">Приглашаем вас разделить с нами самый тёплый день</p>
+        <a href="#rsvp" class="btn">Подтвердить участие</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container section-grid">
+        <div>
+          <p class="section-kicker">О событии</p>
+          <h2>День, который мы хотим провести вместе с вами</h2>
+          <p class="muted" id="event-text"></p>
+          <div class="chips">
+            <span id="event-place">Загородный клуб</span>
+            <span id="event-time">15:00</span>
+          </div>
+        </div>
+        <div class="image-stack">
+          <div class="placeholder blue" aria-label="Синяя заглушка фото"></div>
+          <div class="placeholder red" aria-label="Красная заглушка фото"></div>
+        </div>
+      </section>
+
+      <section class="section countdown">
+        <div class="container center">
+          <p class="section-kicker">Таймер</p>
+          <h2>До встречи осталось</h2>
+          <div class="timer" aria-live="polite">
+            <div><span id="days">0</span><small>дней</small></div>
+            <div><span id="hours">0</span><small>часов</small></div>
+            <div><span id="minutes">0</span><small>минут</small></div>
+            <div><span id="seconds">0</span><small>секунд</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <p class="section-kicker">План дня</p>
+        <h2>Программа</h2>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <section class="section container">
+        <p class="section-kicker">Галерея</p>
+        <h2>Визуальный стиль страницы</h2>
+        <div class="gallery">
+          <div class="placeholder blue"></div>
+          <div class="placeholder red"></div>
+          <div class="placeholder blue"></div>
+          <div class="placeholder red"></div>
+        </div>
+      </section>
+
+      <section id="rsvp" class="section container rsvp">
+        <p class="section-kicker">RSVP</p>
+        <h2>Подтвердите присутствие</h2>
+        <p class="muted">Заполните форму — данные уйдут на вашу почту.</p>
+        <form class="rsvp-form" id="rsvp-form">
+          <input type="text" id="name" placeholder="Ваше имя" required />
+          <input type="number" id="guests" placeholder="Количество гостей" min="1" max="5" required />
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p id="footer-sign">С любовью, Анна и Максим</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
