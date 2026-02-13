@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Элегантное приглашение</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <p id="event-type" class="eyebrow">Свадебное приглашение</p>
+        <h1 id="title">Анна & Максим</h1>
+        <p id="subtitle" class="subtitle">Будем счастливы разделить с вами этот день</p>
+        <a id="hero-rsvp" class="btn btn-light" href="#rsvp">Подтвердить участие</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section intro container">
+        <div class="card card-soft center">
+          <h2>12 сентября 2026</h2>
+          <p id="event-date-text" class="lead">Суббота • 15:00</p>
+          <p id="location-text" class="muted">Загородный клуб «Лесной берег»</p>
+        </div>
+      </section>
+
+      <section class="section gallery">
+        <div class="container">
+          <h2 class="center">Визуальный стиль (демо-блоки)</h2>
+          <p class="center muted">Здесь можно заменить цветные блоки на ваши фотографии.</p>
+          <div id="gallery-grid" class="gallery-grid"></div>
+        </div>
+      </section>
+
+      <section class="section section-contrast">
+        <div class="container center">
+          <h2>До торжества осталось</h2>
+          <div class="timer" aria-live="polite">
+            <div><span id="days">0</span><small>дней</small></div>
+            <div><span id="hours">0</span><small>часов</small></div>
+            <div><span id="minutes">0</span><small>минут</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <h2 class="center">Программа дня</h2>
+        <ul id="program-list" class="program"></ul>
+      </section>
+
+      <section class="section section-contrast-light">
+        <div class="container split">
+          <article class="card">
+            <h3>Dress code</h3>
+            <p id="dress-code-text"></p>
+          </article>
+          <article class="card" id="rsvp">
+            <h3>RSVP</h3>
+            <p>Пожалуйста, сообщите о вашем решении до 01.08.2026</p>
+            <a id="rsvp-link" class="btn" href="#" target="_blank" rel="noopener noreferrer">Подтвердить участие</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>С любовью, <span id="couple-sign">Анна и Максим</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
