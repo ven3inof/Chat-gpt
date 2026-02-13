@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Анна и Максим — приглашение</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+
+    <header class="hero">
+      <div class="hero-card">
+        <p class="hero-kicker" id="event-type">Свадебное приглашение</p>
+        <h1 id="title">Анна & Максим</h1>
+        <p class="hero-subtitle" id="subtitle">Будем счастливы разделить с вами важный день</p>
+        <div class="hero-meta">
+          <span id="event-date-text">12 сентября 2026</span>
+          <span class="dot"></span>
+          <span id="location-text">Санкт-Петербург</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="section countdown-panel">
+        <h2>До праздника осталось</h2>
+        <div class="timer" aria-live="polite">
+          <div><span id="days">0</span><small>дней</small></div>
+          <div><span id="hours">0</span><small>часов</small></div>
+          <div><span id="minutes">0</span><small>минут</small></div>
+        </div>
+      </section>
+
+      <section class="section story-grid">
+        <article class="story-text">
+          <h2>Наша история</h2>
+          <p id="story-text">
+            Мы давно мечтали разделить этот день с самыми близкими. Спасибо, что будете рядом.
+          </p>
+        </article>
+        <article class="story-visuals">
+          <div class="mock-photo blue">Фото 1 (замените на ваше)</div>
+          <div class="mock-photo red">Фото 2 (замените на ваше)</div>
+        </article>
+      </section>
+
+      <section class="section timeline-wrap">
+        <h2>Программа дня</h2>
+        <ul class="timeline" id="program-list"></ul>
+      </section>
+
+      <section class="section details-grid">
+        <article class="card">
+          <h3>Dress code</h3>
+          <p id="dress-code-text"></p>
+        </article>
+        <article class="card">
+          <h3>Пожелания</h3>
+          <p id="wishes-text"></p>
+        </article>
+      </section>
+
+      <section class="section center">
+        <h2>Подтвердите присутствие</h2>
+        <p class="muted" id="rsvp-deadline-text">Пожалуйста, ответьте до 01.08.2026</p>
+        <a id="rsvp-link" class="btn" href="#" target="_blank" rel="noopener noreferrer">Подтвердить участие</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>С любовью, <span id="couple-sign">Анна и Максим</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

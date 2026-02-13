@@ -1,0 +1,270 @@
+:root {
+  --bg: #f5efe8;
+  --paper: #fffaf4;
+  --text: #211b16;
+  --muted: #6b6158;
+  --line: #d8c8b9;
+  --accent: #7c4a3c;
+  --shadow: 0 20px 40px rgba(40, 20, 8, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 15% 10%, #ffffffa8, transparent 30%),
+    radial-gradient(circle at 80% 20%, #f1dfcb80, transparent 28%),
+    linear-gradient(#f8f2eb, #f3e9de 45%, #ede0d2);
+}
+
+.container {
+  width: min(980px, 92vw);
+  margin: 0 auto;
+}
+
+.hero {
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem 1rem;
+}
+
+.hero-card {
+  width: min(820px, 100%);
+  text-align: center;
+  background: #fffdfbcb;
+  border: 1px solid #e7d9cc;
+  border-radius: 28px;
+  padding: clamp(2rem, 5vw, 4rem);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(3px);
+}
+
+h1,
+h2,
+h3,
+.hero-kicker {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 0.03em;
+}
+
+.hero-kicker {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+h1 {
+  margin: 0.2rem 0 0.4rem;
+  font-size: clamp(2.9rem, 8vw, 5.8rem);
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  margin: 0 auto;
+  max-width: 52ch;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.hero-meta {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.section {
+  padding: 2.6rem 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 1.2rem;
+}
+
+.countdown-panel {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.timer div {
+  min-width: 130px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.timer span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.timer small {
+  color: var(--muted);
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.story-text,
+.story-visuals {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.4rem;
+}
+
+.story-text h2 {
+  text-align: left;
+}
+
+.story-visuals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.mock-photo {
+  border-radius: 14px;
+  min-height: 260px;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+}
+
+.mock-photo.blue {
+  background: linear-gradient(135deg, #005fff, #46a1ff);
+}
+
+.mock-photo.red {
+  background: linear-gradient(135deg, #cc1e2f, #ff6b7a);
+}
+
+.timeline-wrap {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 2rem;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.timeline-time {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.1rem 1.2rem;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.8rem;
+  text-decoration: none;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
+  color: #fff;
+  background: linear-gradient(135deg, #7c4a3c, #a3684f);
+  font-weight: 600;
+}
+
+.footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 2rem 0 2.8rem;
+}
+
+@media (max-width: 850px) {
+  .story-grid,
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-visuals {
+    grid-template-columns: 1fr;
+  }
+}
