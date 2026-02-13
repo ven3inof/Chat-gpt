@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Приглашение</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="overlay"></div>
+      <div class="hero-content container">
+        <p class="kicker" id="event-type">Свадебное приглашение</p>
+        <h1 id="title">Анна & Максим</h1>
+        <p class="subtitle" id="subtitle">Будем счастливы разделить с вами важный день</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container center">
+        <h2>Дата</h2>
+        <p class="event-date" id="event-date-text">12 сентября 2026, 15:00</p>
+        <p class="location" id="location-text">Загородный клуб «Лесной берег»</p>
+      </section>
+
+      <section class="section timer-wrap">
+        <div class="container center">
+          <h2>До события осталось</h2>
+          <div class="timer" aria-live="polite">
+            <div><span id="days">0</span><small>дней</small></div>
+            <div><span id="hours">0</span><small>часов</small></div>
+            <div><span id="minutes">0</span><small>минут</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <h2>Программа</h2>
+        <ul class="program" id="program-list"></ul>
+      </section>
+
+      <section class="section container">
+        <h2>Dress code</h2>
+        <p id="dress-code-text"></p>
+      </section>
+
+      <section class="section container center">
+        <h2>Подтверждение присутствия</h2>
+        <p>Пожалуйста, сообщите о вашем решении до 01.08.2026</p>
+        <a id="rsvp-link" class="btn" href="#" target="_blank" rel="noopener noreferrer">Подтвердить участие</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>С любовью, <span id="couple-sign">Анна и Максим</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
